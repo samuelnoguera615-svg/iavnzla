@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iavnzla - La Unión de Binance P2P, Alibaba e iaCuotas en Venezuela</title>
+  <meta name="description" content="Descarga la app oficial de iavnzla. Marketplace mayorista y al detal en Venezuela con protección P2P Escrow, tasas BCV/USDT en vivo y financiamiento en 3 cuotas al 0% de interés.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #6366F1;
+      --primary-dark: #4338CA;
+      --primary-deep: #1E1B4B;
+      --primary-light: #EEF2FF;
+      --green: #10B981;
+      --green-dark: #047857;
+      --amber: #F59E0B;
+      --amber-light: #FEF3C7;
+      --dark: #0B1120;
+      --card-bg: #131D31;
+      --card-border: #1E293B;
+      --text: #F8FAFC;
+      --text-muted: #94A3B8;
+      --font: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font);
+      background-color: var(--dark);
+      color: var(--text);
+      line-height: 1.6;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Background glow effect */
+    .glow-bg {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      max-width: 1200px;
+      height: 600px;
+      background: radial-gradient(circle at 50% 20%, rgba(99, 102, 241, 0.18) 0%, rgba(16, 185, 129, 0.05) 45%, transparent 70%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .container {
+      max-width: 1160px;
+      margin: 0 auto;
+      padding: 0 24px;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Navbar */
+    header {
+      padding: 24px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      backdrop-filter: blur(12px);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(11, 17, 32, 0.85);
+    }
+
+    .nav-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+    }
+
+    .logo-badge {
+      width: 44px;
+      height: 44px;
+      background: linear-gradient(135deg, #6366F1, #8B5CF6);
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      font-weight: 800;
+      color: #fff;
+      box-shadow: 0 8px 20px rgba(99, 102, 241, 0.35);
+    }
+
+    .logo-text {
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      color: #fff;
+    }
+
+    .logo-tag {
+      font-size: 10px;
+      background: rgba(99, 102, 241, 0.15);
+      border: 1px solid rgba(99, 102, 241, 0.3);
+      color: #A5B4FC;
+      padding: 3px 8px;
+      border-radius: 6px;
+      font-weight: 700;
+      margin-left: 6px;
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 24px;
+      border-radius: 12px;
+      font-weight: 700;
+      font-size: 15px;
+      text-decoration: none;
+      transition: all 0.25s ease;
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #6366F1, #4F46E5);
+      color: #fff;
+      box-shadow: 0 10px 24px rgba(99, 102, 241, 0.35);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 30px rgba(99, 102, 241, 0.5);
+    }
+
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.05);
+      color: var(--text);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    /* Hero Section */
+    .hero {
+      padding: 70px 0 50px;
+      text-align: center;
+    }
+
+    .hero-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 16px;
+      background: rgba(99, 102, 241, 0.1);
+      border: 1px solid rgba(99, 102, 241, 0.25);
+      border-radius: 30px;
+      font-size: 13px;
+      color: #A5B4FC;
+      font-weight: 600;
+      margin-bottom: 24px;
+    }
+
+    .hero-title {
+      font-size: clamp(34px, 5vw, 56px);
+      font-weight: 800;
+      line-height: 1.15;
+      letter-spacing: -1px;
+      margin-bottom: 20px;
+      color: #fff;
+    }
+
+    .hero-title span.grad {
+      background: linear-gradient(135deg, #818CF8 20%, #34D399 80%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-subtitle {
+      font-size: 18px;
+      color: var(--text-muted);
+      max-width: 680px;
+      margin: 0 auto 36px;
+      font-weight: 400;
+    }
+
+    .hero-cta {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+
+    /* Live Rates Bar */
+    .rates-bar {
+      display: inline-flex;
+      align-items: center;
+      gap: 24px;
+      padding: 12px 24px;
+      background: rgba(19, 29, 49, 0.8);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 16px;
+      backdrop-filter: blur(8px);
+      margin-top: 10px;
+      font-size: 13px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .rate-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .rate-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--green);
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% { opacity: 0.4; }
+      50% { opacity: 1; }
+      100% { opacity: 0.4; }
+    }
+
+    /* Mockup Showcase */
+    .mockup-wrapper {
+      margin: 50px auto 70px;
+      position: relative;
+      max-width: 860px;
+    }
+
+    .mockup-card {
+      background: linear-gradient(180deg, #1A2642, #10192A);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 28px;
+      padding: 24px;
+      box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6);
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+      text-align: left;
+    }
+
+    .screen-preview {
+      background: #0B1120;
+      border: 1px solid #1E293B;
+      border-radius: 18px;
+      padding: 16px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .screen-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 12px;
+      border-bottom: 1px solid #1E293B;
+      margin-bottom: 12px;
+    }
+
+    /* Features Grid */
+    .features-section {
+      padding: 60px 0;
+    }
+
+    .section-tag {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--primary);
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .section-title {
+      font-size: 32px;
+      font-weight: 800;
+      text-align: center;
+      margin-bottom: 40px;
+      color: #fff;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+    }
+
+    .feature-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 20px;
+      padding: 28px;
+      transition: all 0.3s ease;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(99, 102, 241, 0.4);
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.4);
+    }
+
+    .feature-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .feature-icon.purple { background: rgba(99, 102, 241, 0.15); color: #818CF8; }
+    .feature-icon.green { background: rgba(16, 185, 129, 0.15); color: #34D399; }
+    .feature-icon.amber { background: rgba(245, 158, 11, 0.15); color: #FBBF24; }
+    .feature-icon.blue { background: rgba(2, 132, 199, 0.15); color: #38BDF8; }
+
+    .feature-title {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+
+    .feature-desc {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    /* Steps Section */
+    .steps-section {
+      padding: 60px 0;
+      background: rgba(19, 29, 49, 0.4);
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 24px;
+      margin-top: 36px;
+    }
+
+    .step-card {
+      background: var(--dark);
+      border: 1px solid var(--card-border);
+      border-radius: 18px;
+      padding: 24px;
+      position: relative;
+    }
+
+    .step-num {
+      font-size: 32px;
+      font-weight: 800;
+      color: var(--primary);
+      opacity: 0.5;
+      margin-bottom: 8px;
+    }
+
+    .step-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 8px;
+    }
+
+    .step-desc {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    /* Download Box */
+    .download-section {
+      padding: 80px 0;
+      text-align: center;
+    }
+
+    .download-card {
+      background: linear-gradient(135deg, #1E1B4B 0%, #172554 100%);
+      border: 1px solid rgba(99, 102, 241, 0.3);
+      border-radius: 32px;
+      padding: 50px 30px;
+      max-width: 760px;
+      margin: 0 auto;
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .download-badge {
+      display: inline-block;
+      padding: 6px 14px;
+      background: rgba(16, 185, 129, 0.2);
+      border: 1px solid rgba(16, 185, 129, 0.4);
+      border-radius: 20px;
+      color: #34D399;
+      font-weight: 700;
+      font-size: 12px;
+      margin-bottom: 16px;
+    }
+
+    .download-title {
+      font-size: clamp(26px, 4vw, 38px);
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 12px;
+    }
+
+    .download-desc {
+      color: #CBD5E1;
+      font-size: 15px;
+      margin-bottom: 30px;
+      max-width: 520px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .download-btn-big {
+      display: inline-flex;
+      align-items: center;
+      gap: 14px;
+      padding: 16px 36px;
+      background: linear-gradient(135deg, #10B981, #059669);
+      color: #fff;
+      border-radius: 16px;
+      font-weight: 800;
+      font-size: 18px;
+      text-decoration: none;
+      box-shadow: 0 12px 30px rgba(16, 185, 129, 0.4);
+      transition: all 0.25s ease;
+    }
+
+    .download-btn-big:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 18px 40px rgba(16, 185, 129, 0.55);
+    }
+
+    .install-notes {
+      margin-top: 24px;
+      font-size: 12px;
+      color: #94A3B8;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      padding: 40px 0;
+      text-align: center;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      margin-bottom: 16px;
+    }
+
+    .footer-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .footer-links a:hover {
+      color: #fff;
+    }
+
+    @media (max-width: 640px) {
+      .hero-cta {
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .nav-actions .btn-secondary {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="glow-bg"></div>
+
+  <!-- Header -->
+  <header>
+    <div class="container nav-wrapper">
+      <a href="#" class="logo">
+        <div class="logo-badge">ia</div>
+        <div>
+          <span class="logo-text">iavnzla</span>
+          <span class="logo-tag">v1.0 BETA</span>
+        </div>
+      </a>
+      <div class="nav-actions">
+        <a href="#como-funciona" class="btn btn-secondary">Cómo Funciona</a>
+        <a href="#descargar" class="btn btn-primary">Descargar APK</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-pill">
+        <span>🇻🇪 Plataforma Oficial de Comercio y Pagos Protegidos</span>
+      </div>
+      <h1 class="hero-title">
+        La unión de <span class="grad">Binance P2P, Alibaba</span> <br>e <span class="grad">iaCuotas al 0%</span>
+      </h1>
+      <p class="hero-subtitle">
+        El marketplace venezolano diseñado para compradores y mayoristas. Publica libremente tus artículos, compra con custodia protegida (Escrow) y financia en 3 cuotas quincenales sin interés.
+      </p>
+
+      <div class="hero-cta">
+        <a href="#descargar" class="btn btn-primary" style="padding: 16px 36px; font-size: 17px;">
+          ⬇️ Descargar APK para Android
+        </a>
+        <a href="#beneficios" class="btn btn-secondary" style="padding: 16px 28px; font-size: 17px;">
+          Explorar Características
+        </a>
+      </div>
+
+      <!-- Live Exchange Rates -->
+      <div class="rates-bar">
+        <div class="rate-item">
+          <div class="rate-dot"></div>
+          <span style="color: #CBD5E1;">API en Vivo:</span>
+        </div>
+        <div class="rate-item">
+          <span style="color: var(--amber); font-weight: 700;">🏦 BCV Oficial:</span>
+          <span id="rate-bcv" style="font-weight: 700; color: #fff;">Consultando...</span>
+        </div>
+        <div class="rate-item">
+          <span style="color: #38BDF8; font-weight: 700;">💎 USDT Binance P2P:</span>
+          <span id="rate-usdt" style="font-weight: 700; color: #fff;">Consultando...</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mockup Preview Grid -->
+  <section class="container mockup-wrapper">
+    <div class="mockup-card">
+      <div class="screen-preview">
+        <div class="screen-header">
+          <span style="font-size: 11px; font-weight: 800; color: #A5B4FC;">📦 MAYORISTA & DETAL</span>
+          <span style="font-size: 10px; color: var(--green); font-weight: 700;">ALIBABA STYLE</span>
+        </div>
+        <h4 style="font-size: 14px; font-weight: 700; color: #fff; margin-bottom: 6px;">Catálogo Autogestionado</h4>
+        <p style="font-size: 12px; color: var(--text-muted); margin-bottom: 12px;">Publica artículos con precio al detal y precio especial por bulto/caja para compras al mayor.</p>
+        <div style="background: rgba(255,255,255,0.04); border-radius: 8px; padding: 8px; font-size: 11px;">
+          <div style="display: flex; justify-content: space-between; margin-bottom: 4px;">
+            <span>Detal:</span> <strong>$12.50</strong>
+          </div>
+          <div style="display: flex; justify-content: space-between; color: var(--amber);">
+            <span>Mayor (10+ unid):</span> <strong>$9.80 / u</strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="screen-preview">
+        <div class="screen-header">
+          <span style="font-size: 11px; font-weight: 800; color: #34D399;">🔒 P2P ESCROW</span>
+          <span style="font-size: 10px; color: #38BDF8; font-weight: 700;">BINANCE STYLE</span>
+        </div>
+        <h4 style="font-size: 14px; font-weight: 700; color: #fff; margin-bottom: 6px;">Custodia de Pagos Segura</h4>
+        <p style="font-size: 12px; color: var(--text-muted); margin-bottom: 12px;">Paga por Pago Móvil o Binance Pay con ID de referencia verificado antes de liberar la orden.</p>
+        <div style="background: rgba(16,185,129,0.1); border: 1px solid rgba(16,185,129,0.25); border-radius: 8px; padding: 8px; font-size: 11px; color: #34D399; font-weight: 600;">
+          ✓ Fondos y despacho protegidos hasta confirmación bilateral
+        </div>
+      </div>
+
+      <div class="screen-preview">
+        <div class="screen-header">
+          <span style="font-size: 11px; font-weight: 800; color: #FBBF24;">⚡ iaCUOTAS AL 0%</span>
+          <span style="font-size: 10px; color: #FBBF24; font-weight: 700;">FINANCIAMIENTO</span>
+        </div>
+        <h4 style="font-size: 14px; font-weight: 700; color: #fff; margin-bottom: 6px;">Compra Hoy, Paga en 3</h4>
+        <p style="font-size: 12px; color: var(--text-muted); margin-bottom: 12px;">Inicial del 40% y saldo en 3 cómodas cuotas quincenales sin intereses ni comisiones ocultas.</p>
+        <div style="background: rgba(99,102,241,0.12); border: 1px solid rgba(99,102,241,0.25); border-radius: 8px; padding: 8px; font-size: 11px; color: #A5B4FC;">
+          40% Inicial + 3 cuotas quincenales a 0% interés
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section id="beneficios" class="features-section">
+    <div class="container">
+      <div class="section-tag">¿Por qué elegir iavnzla?</div>
+      <h2 class="section-title">Diseñado para el ecosistema comercial venezolano</h2>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon purple">📦</div>
+          <h3 class="feature-title">Ventas al Mayor y Detal</h3>
+          <p class="feature-desc">Cada emprendedor o negocio establece sus propias escalas de precio: precio por unidad al detal y precio de descuento para compras por bulto o volumen.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon green">🛡️</div>
+          <h3 class="feature-title">Protección Escrow P2P</h3>
+          <p class="feature-desc">Elimina el riesgo de estafas en transferencias. El comprador notifica la referencia bancaria y el vendedor confirma la recepción antes de despachar el artículo.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon amber">⚡</div>
+          <h3 class="feature-title">iaCuotas sin Interés</h3>
+          <p class="feature-desc">Accede a una línea de iaCrédito inicial que crece según tu puntualidad. Financia compras en 3 cuotas fijas quincenales sin recargos bancarios.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon blue">📊</div>
+          <h3 class="feature-title">Tasas BCV y USDT en Vivo</h3>
+          <p class="feature-desc">Integrado con APIs en tiempo real para visualizar siempre la equivalencia precisa en Bolívares (Bs.) tanto a tasa oficial BCV como a tasa de mercado USDT.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it Works -->
+  <section id="como-funciona" class="steps-section">
+    <div class="container">
+      <div class="section-tag">Fácil y Rápido</div>
+      <h2 class="section-title">¿Cómo empezar a usar iavnzla?</h2>
+
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-num">01</div>
+          <h4 class="step-title">Descarga e Instala</h4>
+          <p class="step-desc">Descarga el archivo APK directamente a tu celular Android e instálalo en segundos sin costo.</p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-num">02</div>
+          <h4 class="step-title">Crea tu Cuenta</h4>
+          <p class="step-desc">Regístrate como comprador o vendedor mayorista ingresando tu Cédula o RIF y datos de contacto.</p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-num">03</div>
+          <h4 class="step-title">Publica o Compra</h4>
+          <p class="step-desc">Sube tus artículos con foto y especificaciones o explora el catálogo autogestionado de la comunidad.</p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-num">04</div>
+          <h4 class="step-title">Transacciona Seguro</h4>
+          <p class="step-desc">Usa el sistema de confirmación P2P con Pago Móvil o Binance Pay para transacciones 100% protegidas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Download Section -->
+  <section id="descargar" class="download-section">
+    <div class="container">
+      <div class="download-card">
+        <div class="download-badge">VERSIÓN ANDROID DIRECTA</div>
+        <h2 class="download-title">Descarga iavnzla para Android</h2>
+        <p class="download-desc">
+          Disfruta de la experiencia fluida a 120 FPS, optimizada para rendimiento y sin lag en cualquier teléfono Android 8.0+.
+        </p>
+
+        <a href="iavnzla.apk" download="iavnzla.apk" class="download-btn-big">
+          <span style="font-size: 22px;">🤖</span>
+          <span>Descargar iavnzla APK (17 MB)</span>
+        </a>
+
+        <div class="install-notes">
+          <span>✓ Android 8.0 o superior</span>
+          <span>✓ Sin anuncios molestos</span>
+          <span>✓ 100% Seguro y Verificado</span>
+          <span>✓ Compatible con Pago Móvil y Binance</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-links">
+        <a href="#beneficios">Beneficios</a>
+        <a href="#como-funciona">Cómo Funciona</a>
+        <a href="#descargar">Descargar</a>
+      </div>
+      <p>© 2026 iavnzla. Todos los derechos reservados. Plataforma de comercio electrónico y pagos para Venezuela.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Fetch live BCV and USDT rates from ve.dolarapi.com
+    async function loadRates() {
+      try {
+        const res = await fetch('https://ve.dolarapi.com/v1/dolares');
+        if (res.ok) {
+          const data = await res.json();
+          const oficial = data.find(d => d.fuente === 'oficial');
+          const paralelo = data.find(d => d.fuente === 'paralelo');
+          
+          if (oficial && oficial.promedio) {
+            document.getElementById('rate-bcv').textContent = `Bs. ${Number(oficial.promedio).toFixed(2)}`;
+          }
+          if (paralelo && paralelo.promedio) {
+            document.getElementById('rate-usdt').textContent = `Bs. ${Number(paralelo.promedio).toFixed(2)}`;
+          }
+        }
+      } catch (e) {
+        document.getElementById('rate-bcv').textContent = 'Bs. 918.77';
+        document.getElementById('rate-usdt').textContent = 'Bs. 1066.78';
+      }
+    }
+    loadRates();
+  </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+com.veneca.app-ui-text-release-0 C:\Users\samue\.gradle\caches\8.11.1\transforms\05edc678b44f65d2834edd31b5091912\transformed\ui-text-release\res
+com.veneca.app-lifecycle-runtime-release-1 C:\Users\samue\.gradle\caches\8.11.1\transforms\0915397752fb59f099dc3f8a2847ff0a\transformed\lifecycle-runtime-release\res
+com.veneca.app-core-ktx-1.15.0-2 C:\Users\samue\.gradle\caches\8.11.1\transforms\09a12229ac2f482f1978824c68919a4f\transformed\core-ktx-1.15.0\res
+com.veneca.app-lifecycle-viewmodel-savedstate-2.8.7-3 C:\Users\samue\.gradle\caches\8.11.1\transforms\0cb4d8702396666be5cedebbd4c4156f\transformed\lifecycle-viewmodel-savedstate-2.8.7\res
+com.veneca.app-customview-poolingcontainer-1.0.0-4 C:\Users\samue\.gradle\caches\8.11.1\transforms\13a4972a6a05411c886e926c60b387ef\transformed\customview-poolingcontainer-1.0.0\res
+com.veneca.app-emoji2-1.3.0-5 C:\Users\samue\.gradle\caches\8.11.1\transforms\1a70b4feb3837435839c815ecb48f7d9\transformed\emoji2-1.3.0\res
+com.veneca.app-savedstate-1.2.1-6 C:\Users\samue\.gradle\caches\8.11.1\transforms\1b58994d41c74f166f6c773e5e859276\transformed\savedstate-1.2.1\res
+com.veneca.app-material-icons-extended-release-7 C:\Users\samue\.gradle\caches\8.11.1\transforms\27d3e66572b14cd18256097cdfc4c442\transformed\material-icons-extended-release\res
+com.veneca.app-lifecycle-viewmodel-release-8 C:\Users\samue\.gradle\caches\8.11.1\transforms\2925ca2f303543c0ba1ca51b26ed02bf\transformed\lifecycle-viewmodel-release\res
+com.veneca.app-savedstate-ktx-1.2.1-9 C:\Users\samue\.gradle\caches\8.11.1\transforms\2c666487679619671839a57e571191f2\transformed\savedstate-ktx-1.2.1\res
+com.veneca.app-animation-release-10 C:\Users\samue\.gradle\caches\8.11.1\transforms\2d70411b5fcc2e5c305ec3767043369e\transformed\animation-release\res
+com.veneca.app-graphics-path-1.0.1-11 C:\Users\samue\.gradle\caches\8.11.1\transforms\379224949cb3183fe9cb0701d2e88a6a\transformed\graphics-path-1.0.1\res
+com.veneca.app-activity-1.9.3-12 C:\Users\samue\.gradle\caches\8.11.1\transforms\3c53e1e22e85e7ae0014275550c60d8f\transformed\activity-1.9.3\res
+com.veneca.app-ui-tooling-data-release-13 C:\Users\samue\.gradle\caches\8.11.1\transforms\400bf2ee5fa40e12e7542afa555bfc0b\transformed\ui-tooling-data-release\res
+com.veneca.app-navigation-runtime-ktx-2.8.5-14 C:\Users\samue\.gradle\caches\8.11.1\transforms\429ec65fccbe177149ed9512548027db\transformed\navigation-runtime-ktx-2.8.5\res
+com.veneca.app-navigation-common-ktx-2.8.5-15 C:\Users\samue\.gradle\caches\8.11.1\transforms\43c1b36d9b72fdd7909a1b49841ab9d9\transformed\navigation-common-ktx-2.8.5\res
+com.veneca.app-navigation-runtime-2.8.5-16 C:\Users\samue\.gradle\caches\8.11.1\transforms\4b4bf0583dc017add4ddb9870750e62e\transformed\navigation-runtime-2.8.5\res
+com.veneca.app-material-ripple-release-17 C:\Users\samue\.gradle\caches\8.11.1\transforms\4c3ece53d039fa0136fd60d4bfb48708\transformed\material-ripple-release\res
+com.veneca.app-core-runtime-2.2.0-18 C:\Users\samue\.gradle\caches\8.11.1\transforms\4c5c4e9f9e1ec7fb375535f311816974\transformed\core-runtime-2.2.0\res
+com.veneca.app-foundation-layout-release-19 C:\Users\samue\.gradle\caches\8.11.1\transforms\506e8322a6ed0f5420176d179f20edb0\transformed\foundation-layout-release\res
+com.veneca.app-material3-release-20 C:\Users\samue\.gradle\caches\8.11.1\transforms\53cab53255e3a9fbd2319b6bd3a8a475\transformed\material3-release\res
+com.veneca.app-material-release-21 C:\Users\samue\.gradle\caches\8.11.1\transforms\556ab24115e5c32574f8f1230bf4a5ee\transformed\material-release\res
+com.veneca.app-activity-compose-1.9.3-22 C:\Users\samue\.gradle\caches\8.11.1\transforms\5a7005cd398f9c95aea19a71577885aa\transformed\activity-compose-1.9.3\res
+com.veneca.app-lifecycle-runtime-ktx-release-23 C:\Users\samue\.gradle\caches\8.11.1\transforms\600a8edab3f2ff0c1dffe5aa22f5f3a9\transformed\lifecycle-runtime-ktx-release\res
+com.veneca.app-foundation-release-24 C:\Users\samue\.gradle\caches\8.11.1\transforms\6c14ee59332bafc959e341cba243810b\transformed\foundation-release\res
+com.veneca.app-ui-util-release-25 C:\Users\samue\.gradle\caches\8.11.1\transforms\6d59c88e78c1a035237f43c5108a0b32\transformed\ui-util-release\res
+com.veneca.app-runtime-release-26 C:\Users\samue\.gradle\caches\8.11.1\transforms\7674743ef8a26e5dd3cd4ef3496dc163\transformed\runtime-release\res
+com.veneca.app-tracing-1.2.0-27 C:\Users\samue\.gradle\caches\8.11.1\transforms\7e302cbdf333b019a83839bccfe70270\transformed\tracing-1.2.0\res
+com.veneca.app-ui-unit-release-28 C:\Users\samue\.gradle\caches\8.11.1\transforms\88f472c1b9eb1ee2b49fd7dbd31b28a1\transformed\ui-unit-release\res
+com.veneca.app-material-icons-core-release-29 C:\Users\samue\.gradle\caches\8.11.1\transforms\8b31e687e0c2a45b23f9e293cf9a37db\transformed\material-icons-core-release\res
+com.veneca.app-ui-geometry-release-30 C:\Users\samue\.gradle\caches\8.11.1\transforms\97ed43527aae9eb663ca4b5483d90cee\transformed\ui-geometry-release\res
+com.veneca.app-ui-tooling-release-31 C:\Users\samue\.gradle\caches\8.11.1\transforms\aa5e20078d85bfbb79a06a111bbac5cf\transformed\ui-tooling-release\res
+com.veneca.app-activity-ktx-1.9.3-32 C:\Users\samue\.gradle\caches\8.11.1\transforms\acec92ba3ad01f69b06c31ba9d20e38a\transformed\activity-ktx-1.9.3\res
+com.veneca.app-ui-release-33 C:\Users\samue\.gradle\caches\8.11.1\transforms\c0a6a506453d1a5a8f524e96f936543b\transformed\ui-release\res
+com.veneca.app-lifecycle-viewmodel-compose-release-34 C:\Users\samue\.gradle\caches\8.11.1\transforms\c0c03d578711f0ff52760d8ef4a9df36\transformed\lifecycle-viewmodel-compose-release\res
+com.veneca.app-core-1.15.0-35 C:\Users\samue\.gradle\caches\8.11.1\transforms\c178989d6277e4285a6cc647d455890a\transformed\core-1.15.0\res
+com.veneca.app-annotation-experimental-1.4.1-36 C:\Users\samue\.gradle\caches\8.11.1\transforms\c1930936447fa8923a6ca8a330ac4196\transformed\annotation-experimental-1.4.1\res
+com.veneca.app-runtime-saveable-release-37 C:\Users\samue\.gradle\caches\8.11.1\transforms\c6c0eb70269318be38b6a886f9120f09\transformed\runtime-saveable-release\res
+com.veneca.app-lifecycle-viewmodel-ktx-2.8.7-38 C:\Users\samue\.gradle\caches\8.11.1\transforms\caa013c3481d7bf99acaae07d8209f1e\transformed\lifecycle-viewmodel-ktx-2.8.7\res
+com.veneca.app-lifecycle-livedata-core-2.8.7-39 C:\Users\samue\.gradle\caches\8.11.1\transforms\cd82485e3baa876e2a2888d02cf760fb\transformed\lifecycle-livedata-core-2.8.7\res
+com.veneca.app-ui-tooling-preview-release-40 C:\Users\samue\.gradle\caches\8.11.1\transforms\ce8e8ebe40092584c68992aae9b9c593\transformed\ui-tooling-preview-release\res
+com.veneca.app-navigation-common-2.8.5-41 C:\Users\samue\.gradle\caches\8.11.1\transforms\cf34e901361dca75983dcbdc21386691\transformed\navigation-common-2.8.5\res
+com.veneca.app-profileinstaller-1.3.1-42 C:\Users\samue\.gradle\caches\8.11.1\transforms\d4fa8fc9ff3921ba681beb046dfe9a0c\transformed\profileinstaller-1.3.1\res
+com.veneca.app-lifecycle-runtime-compose-release-43 C:\Users\samue\.gradle\caches\8.11.1\transforms\d9e4d2be6b6a33339f7efd3b6cfbcefe\transformed\lifecycle-runtime-compose-release\res
+com.veneca.app-animation-core-release-44 C:\Users\samue\.gradle\caches\8.11.1\transforms\de8cdae89cf3647a6974974e79e3fbcf\transformed\animation-core-release\res
+com.veneca.app-lifecycle-process-2.8.7-45 C:\Users\samue\.gradle\caches\8.11.1\transforms\e4684248ce643a927d4571a84af27020\transformed\lifecycle-process-2.8.7\res
+com.veneca.app-startup-runtime-1.1.1-46 C:\Users\samue\.gradle\caches\8.11.1\transforms\efbd039d137f21915bd4713d3dab9e11\transformed\startup-runtime-1.1.1\res
+com.veneca.app-navigation-compose-2.8.5-47 C:\Users\samue\.gradle\caches\8.11.1\transforms\f09c6a02bcac13deced7a0f2f1623708\transformed\navigation-compose-2.8.5\res
+com.veneca.app-ui-graphics-release-48 C:\Users\samue\.gradle\caches\8.11.1\transforms\f29c5a0198a1d92b6d155a1e4c27dcb5\transformed\ui-graphics-release\res
+com.veneca.app-pngs-49 C:\Users\samue\OneDrive\Desktop\Ia veneca app\.gradle\build\app\generated\res\pngs\debug
+com.veneca.app-resValues-50 C:\Users\samue\OneDrive\Desktop\Ia veneca app\.gradle\build\app\generated\res\resValues\debug
+com.veneca.app-packageDebugResources-51 C:\Users\samue\OneDrive\Desktop\Ia veneca app\.gradle\build\app\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.veneca.app-packageDebugResources-52 C:\Users\samue\OneDrive\Desktop\Ia veneca app\.gradle\build\app\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.veneca.app-debug-53 C:\Users\samue\OneDrive\Desktop\Ia veneca app\.gradle\build\app\intermediates\merged_res\debug\mergeDebugResources
+com.veneca.app-debug-54 C:\Users\samue\OneDrive\Desktop\Ia veneca app\app\src\debug\res
+com.veneca.app-main-55 C:\Users\samue\OneDrive\Desktop\Ia veneca app\app\src\main\res

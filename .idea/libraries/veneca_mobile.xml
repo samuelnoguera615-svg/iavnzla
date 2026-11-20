@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="veneca-mobile">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/mobile/out/veneca-mobile.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,9 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color veneca_blue
+color veneca_gold
+color white
+mipmap ic_launcher
+string app_name
+style Theme.VenecaApp
